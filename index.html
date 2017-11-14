@@ -6,68 +6,116 @@
     <link rel="stylesheet" href="main.css" />
     <title>Concept</title>
   </head>
-  <body class="container-fluid">
-
-    <div id="top-bar" class="row"></div>
-    <div id="content" class="row">
-      <div id="content-left" class="col-xs-3">
-        <div class="profile-panel">
+  <body>
+    <div id="top-bar"></div>
+    <div id="content">
+      <div id="content-left">
+        <div id="profile-panel" class="panel-layout">
           <div id="profile-background"></div>
-          <img id="profile-pic" src="images/profile_pic.png" class="img-circle"/>
+          <img src="images/profile_pic.png" class="img-circle img-responsive"/>
           <div id="profile-name">
-            <h4>Firstname lastname</h4>
-            <h5>Username</h5>
+            <h4>John Doe</h4>
+            <h5>XxJohnDoexX</h5>
           </div>
           <div>
-            <div id="profile-posts">
+            <div>
               <h4>Posts</h4>
-              <h5>13</h5>
+              <h5>1</h5>
             </div>
-            <div id="profile-followers">
+            <div>
               <h4>Followers</h4>
               <h5>37</h5>
             </div>
           </div>
         </div>
-        <div class="pages-panel">
+        <div id="pages-panel" class="panel-layout">
           <h4><strong>Pages</strong></h4>
-          <div>
-            <img src="images/profile_pic.png" class="img-circle"/><h4>test</h4>
-          </div>
-          <div>
-            <img src="images/profile_pic.png" class="img-circle"/><h4>test 2</h4>
-          </div>
-          <div>
-            <img src="images/profile_pic.png" class="img-circle"/><h4>test 3</h4>
-          </div>
-          <div>
-            <img src="images/profile_pic.png" class="img-circle"/><h4>test 4</h4>
-          </div>
+          <a>
+            <img src="images/profile_pic.png" class="img-circle img-responsive"/><h4>test 1</h4>
+          </a>
+          <a>
+            <img src="images/profile_pic.png" class="img-circle img-responsive"/><h4>test 2</h4>
+          </a>
+          <a>
+            <img src="images/profile_pic.png" class="img-circle img-responsive"/><h4>test 3</h4>
+          </a>
+          <a>
+            <img src="images/profile_pic.png" class="img-circle img-responsive"/><h4>test 4</h4>
+          </a>
         </div>
       </div>
 
-      <div id="content-center" class="col-xs-6">
-        <div class="feed-panel">
-          <h3><strong>Feed</strong></h3>
+      <div id="content-center">
+        <div id="feed-panel" class="panel-layout">
+          <h4><strong>Feed</strong></h4>
         </div>
       </div>
 
-      <div id="content-right" class="col-xs-3">
-        <div class="trending-panel">
+      <div id="content-right">
+        <div id="trending-panel" class="panel-layout">
           <h4><strong>Trending News</strong></h4>
-          <ul>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
-          </ul>
+          <div>
+            <img src="images/profile_pic.png" class="img-responsive"/><h4><strong>test 1</strong></h4>
+            <h6>sadasdas asdas
+            test 1sdadasd sadasdas asdas
+            test 1sdadasd sadasdas asdas
+            test 1sdadasd sadasdas asdas
+            test 1sdadasd sadasdas asdas...</h6>
+          </div>
+          <div>
+            <img src="images/profile_pic.png" class="img-responsive"/><h4><strong>test 2</strong></h4>
+            <h6>sadasdas asdas
+            test 1sdadasd sadasdas asdas
+            test 1sdadasd sadasdas asdas
+            test 1sdadasd sadasdas asdas
+            test 1sdadasd sadasdas asdas...</h6>
+          </div>
+          <div>
+            <img src="images/profile_pic.png" class="img-responsive"/><h4><strong>test 3</strong></h4>
+            <h6>sadasdas asdas
+            test 1sdadasd sadasdas asdas
+            test 1sdadasd sadasdas asdas
+            test 1sdadasd sadasdas asdas
+            test 1sdadasd sadasdas asdas...</h6>
+          </div>
+          <div>
+            <img src="images/profile_pic.png" class="img-responsive"/><h4><strong>test 4</strong></h4>
+            <h6>sadasdas asdas
+            test 1sdadasd sadasdas asdas
+            test 1sdadasd sadasdas asdas
+            test 1sdadasd sadasdas asdas
+            test 1sdadasd sadasdas asdas...</h6>
+          </div>
         </div>
-        <div class="recommendations-panel">
+        <div id="page-rec-panel" class="panel-layout">
           <h4><strong>Page Recommendations</strong></h4>
-          <ul>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
-          </ul>
+          <a>
+            <img src="images/profile_pic.png" class="img-circle img-responsive"/><h4>test 1</h4><span> (1k subs)</span>
+          </a>
+          <a>
+            <img src="images/profile_pic.png" class="img-circle img-responsive"/><h4>test 2</h4><span> (1k subs)</span>
+          </a>
+          <a>
+            <img src="images/profile_pic.png" class="img-circle img-responsive"/><h4>test 3</h4><span> (1k subs)</span>
+          </a>
+          <a>
+            <img src="images/profile_pic.png" class="img-circle img-responsive"/><h4>test 4</h4><span> (1k subs)</span>
+          </a>
+        </div>
+        <div id="user-rec-panel" class="panel-layout">
+          <h4><strong>Users You May Know</strong></h4>
+          <a>
+            <img src="images/profile_pic.png" class="img-circle img-responsive"/><h4>test 1</h4><span> (1k followers)</span>
+          </a>
+          <a>
+            <img src="images/profile_pic.png" class="img-circle img-responsive"/><h4>test 2</h4><span> (1k followers)</span>
+          </a>
+          <a>
+            <img src="images/profile_pic.png" class="img-circle img-responsive"/><h4>test 3</h4><span> (1k followers)</span>
+          </a>
+          <a>
+            <img src="images/profile_pic.png" class="img-circle img-responsive"/><h4>test 4</h4><span> (1k followers)</span>
+          </a>
         </div>
       </div>
     </div>

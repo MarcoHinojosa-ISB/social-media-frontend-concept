@@ -5,6 +5,8 @@ body{
 #top-bar{
   position: fixed;
   background-color: #ffffff;
+  top: 0px;
+  left: 0px;
   width: 100%;
   height: 50px;
   border-bottom: 1px solid #fafafa;
@@ -13,75 +15,146 @@ body{
   z-index: 1;
 }
 #content{
-  position: relative;
-  top: 60px;
+  margin-top: 60px;
   padding-left: 50px;
   padding-right: 50px;
 }
-
-.profile-panel{
-  background-color: #ffffff;
-  padding: 5px;
-  margin-bottom: 10px;
+#content-left{
+  float: left;
+  width: 23%;
 }
+#content-center{
+  float: left;
+  width: 54%;
+  border-left: 10px solid #f0f0f0;
+  border-right: 10px solid #f0f0f0;
+}
+#content-right{
+  float: left;
+  width: 23%;
+}
+
+/* PROFILE PANEL */
+
 #profile-background{
   height: 100px;
   background-image: url("images/profile_background.png");
 }
-#profile-pic{
+#profile-panel > img{
   display: inline-block;
   position: relative;
   top: -30px;
-  width: 30%;
+  width: 28%;
   border: 5px solid white;
 }
 #profile-name{
   display: inline-block;
-  margin: 0px;
 }
 #profile-name > h5{
   color: #888888;
 }
-#profile-posts, #profile-followers{
+#profile-panel > div > div{
   text-align: center;
   display: inline-block;
   width: 45%;
   margin-top: -30px;
 }
 
-.pages-panel{
-  background-color: #ffffff;
-  padding: 1px 10px 10px 10px;
-  margin-bottom: 10px;
-}
-.pages-panel > div{
+/* PAGES PANEL */
+#pages-panel > a{
+  display: block;
   padding: 5px;
 }
-.pages-panel > div + div{
+#pages-panel > a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+#pages-panel > a + a{
   border-top: 1px solid #c0c0c0;
 }
-.pages-panel > div > img{
+#pages-panel > a > img{
   display: inline-block;
-  width: 15%;
+  width: 13%;
 }
-.pages-panel > div > h4{
+#pages-panel > a > h4{
   display: inline-block;
-  padding: 5px;
+  padding-left: 5px;
 }
 
-.feed-panel{
-  background-color: #ffffff;
-  padding: 1px 10px 10px 10px;
-  margin-bottom: 10px;
+/* PAGE REC PANEL */
+#page-rec-panel > a{
+  display: block;
+  padding: 5px;
 }
-.trending-panel{
-  background-color: #ffffff;
-  padding: 1px 10px 10px 10px;
-  margin-bottom: 10px;
+#page-rec-panel > a:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
-.recommendations-panel{
+#page-rec-panel > a + a{
+  border-top: 1px solid #c0c0c0;
+}
+#page-rec-panel > a > img{
+  display: inline-block;
+  width: 16%;
+}
+#page-rec-panel > a > h4{
+  display: inline-block;
+  padding-left: 5px;
+}
+#page-rec-panel > a > span{
+  color: gray;
+}
+
+/* USER-REC-PANEL */
+#user-rec-panel > a{
+  display: block;
+  padding: 5px;
+}
+#user-rec-panel > a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+#user-rec-panel > a + a{
+  border-top: 1px solid #c0c0c0;
+}
+#user-rec-panel > a > img{
+  display: inline-block;
+  width: 16%;
+}
+#user-rec-panel > a > h4{
+  display: inline-block;
+  padding-left: 5px;
+}
+#user-rec-panel > a > span{
+  color: gray;
+}
+
+
+/* TRENDING PANEL */
+#trending-panel > div{
+  padding: 5px;
+  max-height: 100px;
+  overflow: hidden;
+}
+#trending-panel > div:hover{
+  cursor: pointer;
+  background-color: #f6f6f6;
+}
+#trending-panel > div + div{
+  border-top: 1px solid #c0c0c0;
+}
+#trending-panel > div > img{
+  display: inline-block;
+  width: 13%;
+}
+#trending-panel > div > h4{
+  display: inline;
+  padding-left: 5px;
+}
+
+.panel-layout{
   background-color: #ffffff;
-  padding: 1px 10px 10px 10px;
+  padding: 7px;
   margin-bottom: 10px;
 }
 ul{
